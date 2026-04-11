@@ -1,0 +1,330 @@
+body
+{
+    font-family: "Comfortaa", sans-serif;
+
+}
+
+.heading
+{
+    width: fit-content;
+    margin: 0px;
+    text-decoration: underline;
+}
+.navbar 
+{
+    background: #f8f5e9;
+}
+p{
+    margin: 0px;
+}
+#HeroSection
+{
+    width: 100%;
+    height: 85vh;
+    background: #f8f5e9;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSectionContent
+{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.myImageCircle
+{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.heroSectionContent p
+{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.focus-text
+{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.heroButtons
+{
+    background: black;
+    color: white;
+    padding: 0px 15px;
+}
+
+/* About me section */
+#aboutMeSection
+{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.aboutP1,.aboutP2
+{
+    width: 47%;
+   
+}
+
+.aboutP1
+{
+    text-align: center;
+}
+
+.aboutP1 img
+{
+    border-radius: 10px;
+}
+
+/* Skills section*/
+#skillsSection
+{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.skillsDiv
+{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    display: flex;
+    min-height: 100px;
+}
+
+.skillsDiv .p1
+{
+    width: 25%;
+    background: #f8f5e9;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.skillsDiv .p2
+{
+    width: 75%;
+    font-size: 20px;
+}
+
+.skillsList
+{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+/* project section */
+#projectSection{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.project
+{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    border-radius: 15px;
+}
+
+.project .p1
+{
+    width: 50%;
+    text-align: center;
+}
+
+.project .p1 img
+{
+    border-radius: 10px;
+}
+
+.project .p2
+{
+    width: 50%;
+}
+
+.githubButton
+{
+    background: black;
+    color: white;
+    padding: 0px 15px;
+    font-size: 18px;
+}
+
+.demoButton
+{
+    background: #f8f5e9;
+    padding: 0px 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* contact section */
+
+#ContactSection
+{
+    width: 85%;
+    margin: auto;
+    min-height: 200px;
+    border-radius: 15px;
+    background: #f8f5e9;
+    padding: 10px;
+    
+}
+
+.contactDivOne
+{
+    background: #F44336;
+    width: 40%;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: x-small;
+}
+
+.contactDivTwo
+{
+    background: #0177B4;
+    width: 40%;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: small;
+}
+
+.contactDivTwo:hover, .contactDivOne:hover
+{
+    cursor: pointer;
+}
+
+.contactbuttons
+{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* footer */
+footer
+{
+    background: black;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+}
+
+/* Mobile Version */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+    #aboutMeSection
+    {
+        flex-direction: column;
+      
+    }
+    .aboutP1,.aboutP2
+{
+    width: 100%;
+   
+}
+
+.aboutP1
+{
+    text-align: center;
+}
+
+.aboutP1 img
+{
+    border-radius: 10px;
+}
+.aboutP2
+{
+    margin-top: 15px;
+    text-align: left;
+    padding: 10px;
+}
+.skillsDiv
+{
+    flex-direction: column;
+}
+.skillsList
+{
+   width: 100%;
+   flex-wrap: wrap;
+   margin-top: 25px;
+}
+.skillsDiv .p1
+{
+    width: 100%;
+    background: #f8f5e9;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.skillsDiv .p2
+{
+    width: 100%;
+    font-size: 23px;
+    
+}
+.project
+{
+    flex-direction: column;
+}
+
+.project .p1
+{
+    width: 100%;
+}
+
+.project .p2
+{
+    width: 100%;
+}
+
+.contactbuttons
+{
+    flex-direction: column;
+}
+
+.contactDivOne
+{
+    width: 100%;
+}
+
+.contactDivTwo
+{
+    width: 100%;
+}
+}
